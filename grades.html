@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1> Select the grade you wish to achieve! </h1>
+<form action="/register" method="post">
+  <input autocomplete="off" autofocus name="subject" placeholder="Subject" type="text">
+  <select name="grade"> 
+    <option disable selected> Grade </option>
+    <option> A </option>
+    <option> B </option>
+    <option> C </option>
+    <option> D </option>
+    <option> E </option>
+    <option> S </option>
+    <option> U </option></select>
+  <input type="submit">
+
+
+{% endblock %}
